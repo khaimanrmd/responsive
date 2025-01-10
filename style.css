@@ -61,16 +61,44 @@ header h3 {
     padding: 5px 0;
     font-size: small;
 }
-
+.point{
+    display: flex;
+    flex-direction: row;
+    margin-left: -20%;
+}
+.point img {
+    margin-left: 10%;
+}
 .coucou_les_congolais {
+    padding-top: 3%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
     background-color: #ccfcfe;
     width: 100%;;
     border-bottom: solid black 1px;
     align-items: center;
     justify-content: center;
 }
+#back {
+    background: none;
+    border: 0;
+    position: absolute;
+    margin-top: 9%;
+    left: -5;
+    width: 12%;
+}
+#right {
+    transform: scaleX(-1);
+    background: none;
+    border: 0;
+    position: absolute;
+    margin-top: 9%;
+    margin-left: 58%;
+    width: 12%;
+}
 .imagesla {
-    width: 60%;
+    width: 70%;
 }
 .imagelala {
     width: 80%;;
@@ -136,7 +164,7 @@ header h3 {
 }
 .prefooter {
     height: 400%;
-    width: 80%;
+    width: 70%;
     background-color: #ccfcfe;
     align-items: center;
     justify-content: center;
@@ -172,15 +200,15 @@ footer {
     background-color: #9a98fb;
     width: 100%;
     align-items: center;
-
 }
 .footer {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
 }
 .rapide {
     display: flex;
+    width: 60%;
     flex-direction: row;
     margin-left: 3%;
     margin-top: 5%;
@@ -188,6 +216,7 @@ footer {
 }
 .rapide p {
     margin-left: 3%;
+    width: 100%;
 }
 .© {
     margin-left: 5%;
