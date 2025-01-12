@@ -2,9 +2,13 @@ document.addEventListener("DOMContentLoaded", function() {
     carroussel = document.getElementsByClassName("coucou_les_congolais")[0];
     point = document.getElementsByClassName("point")[0];
     points = point.querySelectorAll("img");
-
+    flechedest = document.getElementsByClassName("voirplus")[1];
+    flechebook = document.getElementsByClassName("voirplus")[0];
+    cbook = document.getElementsByClassName("cdest")[0]
+    cdest = document.getElementsByClassName("cdest")[1];
     bodyy = document.querySelector("body");
-
+    c = false;
+    b = false;
     point1 = points[0];
     point2 = points[1];
     point3 = points[2];
@@ -76,7 +80,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     left.addEventListener("click", function() {
         if (o1 === true) {
-            image1.style.display = "flex";
+            image1.style.display = "none";
+            o1 = false;
+            image6.style.display = "flex";
+            o6 = true;
         } else if (o2 === true) {
             image2.style.display = "none";
             o2 = false;
@@ -149,7 +156,10 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     right.addEventListener("click", function() {
         if (o6 === true) {
-            image6.style.display = "flex";
+            image6.style.display = "none";
+            o6 = false;
+            image1.style.display = "flex";
+            o1 = true;
         } else if (o5 === true) {
             image5.style.display = "none";
             o5 = false;
@@ -345,4 +355,22 @@ document.addEventListener("DOMContentLoaded", function() {
             point.src = "assets/point/none.png";
         })
     });
+    flechedest.addEventListener("click", function() {
+        if (c === true) {
+            cdest.style.display = "none";
+            c = false;
+        } else if (c === false) {
+            cdest.style.display = "block";
+            c = true;
+        }
+    })
+    flechebook.addEventListener("click", function() {
+        if (b === true) {
+            cbook.style.display = "none";
+            b = false;
+        } else if (b === false) {
+            cbook.style.display = "block";
+            b = true;
+        }
+    })
 })
