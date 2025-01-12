@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     points = point.querySelectorAll("img");
     flechedest = document.getElementsByClassName("voirplus")[1];
     flechebook = document.getElementsByClassName("voirplus")[0];
-    cbook = document.getElementsByClassName("cdest")[0]
-    cdest = document.getElementsByClassName("cdest")[1];
+    cdest1 = document.getElementsByClassName("cdest")[0]
+    cdest2 = document.getElementsByClassName("cdest2")[0];
     bodyy = document.querySelector("body");
     c = false;
     b = false;
@@ -357,19 +357,19 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     flechedest.addEventListener("click", function() {
         if (c === true) {
-            cdest.style.display = "none";
+            cdest2.style.display = "none";
             c = false;
         } else if (c === false) {
-            cdest.style.display = "block";
+            cdest2.style.display = "block";
             c = true;
         }
     })
     flechebook.addEventListener("click", function() {
         if (b === true) {
-            cbook.style.display = "none";
+            cdest1.style.display = "none";
             b = false;
         } else if (b === false) {
-            cbook.style.display = "block";
+            cdest1.style.display = "block";
             b = true;
         }
     })
