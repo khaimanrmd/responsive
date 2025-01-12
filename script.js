@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     points = point.querySelectorAll("img");
     flechedest = document.getElementsByClassName("voirplus")[1];
     flechebook = document.getElementsByClassName("voirplus")[0];
-    cdest1 = document.getElementsByClassName("cdest")[0]
+    cdest1 = document.getElementsByClassName("cdest")[0];
     cdest2 = document.getElementsByClassName("cdest2")[0];
     bodyy = document.querySelector("body");
     c = false;
